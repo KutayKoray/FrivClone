@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #6407a7; 
+    overflow: hidden;
+  }
+  
+  .container {
+    padding: 20px;
+    display: flex;
+  }
+  
+  .logo {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(22, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    gap: 10px;
+    width: 100vw;
+    height: 95vh;
+}
+
+.grid div {
+    background-size: cover;
+    transition: transform 0.1s ease-in-out;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    
+}
+
+.grid div:hover {
+    transform: scale(1.5);
+    border: 3px solid #fdf100;
+    
+}
+
